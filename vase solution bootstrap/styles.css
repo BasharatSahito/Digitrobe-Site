@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font: 12px/20px "Helvetica neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/* .nav-link{
+    background-color: red;
+    
+} */
+
+.nav-link:hover{
+    transition: 0.1s;
+    transform: scale(1.1);
+}

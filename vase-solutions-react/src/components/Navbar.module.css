@@ -1,0 +1,19 @@
+/* Navbar Popout Animation  */
+.nav_popout:hover{
+    transition: 0.1s;
+    transform: scale(1.2);
+}
+
+/* Navbar Line Animation  */
+.nav_line::after{
+    content: "";
+    width: 0%;
+    background-color: #8AF2FD;
+    display: block;
+    height: 3px;
+}
+
+.nav_line:hover::after{
+    transition: all .5s;
+    width: 100%;
+}
