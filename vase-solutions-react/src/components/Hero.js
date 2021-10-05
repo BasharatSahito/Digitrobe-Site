@@ -1,6 +1,6 @@
 import React from 'react';
 import robotpic from '../images/robotpic.png'
-import style from './Button.module.css'
+// import style from './Button.module.css'
 export default function Hero() {
     return (
         <div>
@@ -16,8 +16,8 @@ export default function Hero() {
                         <p className="lead">We transform businesses of most major sectors with powerful and adaptable digital
                             solutions that satisfy the needs of today. </p>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <button type="button" className={`btn btn-primary btn-lg px-4 me-md-2 ${style.myButton} `} >Find Out More</button>
-                            <button type="button" className="btn btn-outline-secondary btn-lg px-4">Default</button>
+                            <button style={{ fontFamily: 'roboto', fontWeight: 500 }} type="button" className={`btn btn-primary px-4 me-md-2`} >Find Out More</button>
+                            <button style={{ fontFamily: 'roboto' }} type="button" className="btn btn-outline-secondary px-4">Default</button>
                         </div>
                     </div>
                 </div>

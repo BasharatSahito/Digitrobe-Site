@@ -3,7 +3,7 @@ import styles from './Navbar.module.css'
 export default function Navbar() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+            <nav className="navbar navbar-expand-lg navbar-light w-100">
                 <div className="container">
                     <a className="navbar-brand" href="/">Navbar</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
