@@ -52,7 +52,6 @@
         }
 
 
-
         #nav-icon3 {
             width: 45px;
             height: 36px;
@@ -114,7 +113,7 @@
         }
     </style>
 
-</head>
+</head>`
 
 <body>
 
@@ -138,16 +137,12 @@
 
 
     <script>
-        $(document).ready(function () {
-            $('#nav-icon3').click(function () {
-                if ($("#mainNavigation").css("display") === "none") {
-                    $(this).toggleClass('open');
-                    $("#mainNavigation").css("display", "flex").hide().fadeIn(500);
-                } else {
-                    $(this).toggleClass('open');
-                    $("#mainNavigation").fadeOut(500);
-                }
-            });
+
+
+
+        $('#nav-icon3').click(function () {
+            $(this).toggleClass('open');
+            $("#mainNavigation.overlay").fadeToggle().css('display', 'flex');
         });
 
     </script>
