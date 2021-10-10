@@ -17,40 +17,14 @@
 
 
     <style>
-        {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            background-color: rgba(20, 20, 20);
-            opacity: 0.9;
-            font-family: 'roboto';
-            font-weight: 400;
-            font-size: 1rem;
-        }
-
-
-
-        a {
-            text-decoration: none;
-            color: white;
-            display: block;
-            margin-right: 100px;
-            font-size: 2em;
-            padding: 10px;
-        }
-
-        a:hover {
+        /* hover */
+            {
             margin-right: 92px;
             transition: all .4s;
             color: green;
         }
 
-
+        /* Hamburger Menu */
         #nav-icon3 {
             width: 45px;
             height: 36px;
@@ -112,17 +86,17 @@
         }
     </style>
 
-</head>`
+</head>
 
 <body>
 
     <nav id="mainNavigation"
-        class="fixed top-0 left-0 w-full h-full flex items-center justify-end bg-current opacity-90 font-myFont">
+        class="fixed top-0 left-0 w-full h-full hidden items-center justify-end bg-current opacity-90 font-myFont font-normal text-base">
         <div class="text-xs text-right">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a class="text-white block mr-20 text-2xl p-2 hover:mr-20 " href="#">Home</a>
+            <a class="text-white block mr-20 text-2xl p-2" href="#">Services</a>
+            <a class="text-white block mr-20 text-2xl p-2" href="#">About</a>
+            <a class="text-white block mr-20 text-2xl p-2" href="#">Contact</a>
         </div>
     </nav>
 
@@ -135,12 +109,11 @@
     </div>
 
 
-
     <script>
 
         $('#nav-icon3').click(function () {
             $(this).toggleClass('open');
-            $("#mainNavigation.overlay").fadeToggle().css('display', 'flex');
+            $("#mainNavigation").fadeToggle().css('display', 'flex');
         });
 
     </script>
