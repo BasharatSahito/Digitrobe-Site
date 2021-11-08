@@ -1,27 +1,26 @@
 import React from 'react';
-import robotpic from '../images/robotpic.png'
-// import style from './Button.module.css'
+
 export default function Hero() {
     return (
         <div>
-            <div className="container col-xxl-8 px-4 py-5">
-                <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div className="col-10 col-sm-8 col-lg-6">
-                        <img src={robotpic} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                            height="500" />
-                    </div>
-                    <div className="col-lg-6">
-                        <span> Functional, Usability & Performance </span>
-                        <h1 className="display-5 fw-bold lh-1 mb-3">INFORMATION TECHNOLOGY </h1>
-                        <p className="lead">We transform businesses of most major sectors with powerful and adaptable digital
-                            solutions that satisfy the needs of today. </p>
-                        <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <button style={{ fontFamily: 'roboto', fontWeight: 500 }} type="button" className={`btn btn-primary px-4 me-md-2`} >Find Out More</button>
-                            <button style={{ fontFamily: 'roboto' }} type="button" className="btn btn-outline-secondary px-4">Default</button>
+            <section id="hero" className="d-flex align-items-center">
+
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                            <h1>Better Solutions For Your Business</h1>
+                            <h2>We are team of talented designers making websites with Bootstrap</h2>
+                            <div className="d-flex justify-content-center justify-content-lg-start">
+                                <a href="#about" className="btn-get-started scrollto">Get Started</a>
+                                <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="glightbox btn-watch-video"><i className="bi bi-play-circle"></i><span>Watch Video</span></a>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="/src/hero-img.png" className="img-fluid animated" alt="" />
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div >
     )
 }
